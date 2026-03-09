@@ -1,14 +1,17 @@
-# Experience-Plugin-Pwnagotchi
+# zhuralol's EXPerience Plugin
 
-A totally not useful plugin for the Pwnagotchi, making it get experience everytime he Associates, Deauths or get a Handshake. Try to level him up!
-Based on Gaelic Thunder's work. Updated for the jayofelony's pwnagotchi image - https://github.com/jayofelony/pwnagotchi/
+Yet another Pwnagotchi experience plugin. Get experience from Associations, Deauths and Handshakes.
+Try to level it up!
 
-![EXP Plugin](exp_new.jpg)
+Based on Gaelic Thunder's work - https://github.com/GaelicThunder/Experience-Plugin-Pwnagotchi
+Updated for the jayofelony's pwnagotchi image - https://github.com/jayofelony/pwnagotchi/
+
+![EXP Plugin](zh_exp.jpg)
 
 
 ## Setup
 1. Copy over `exp.py` into your custom plugins directory (usually `/usr/local/share/pwnagotchi/custom-plugins/`)
-2. Please check that you do not have any similar plugins already! Like `xp.py`.
+2. Please check that you do not have any similar plugins already! Like `xp.py`. That might break things.
 3. In your `config.toml` file (use the `config` command for that), add:
 ```toml
    [main.plugins.exp]
@@ -24,9 +27,8 @@ Based on Gaelic Thunder's work. Updated for the jayofelony's pwnagotchi image - 
 
 ## Things to do
   
-- [x] Better Save System -> Saves are now in json Format and will per default migrate.
-- [x] Make him count how many Handshake you have already captured and try to make a fair level up if you're not starting from zero, and you just installed the plugin [Example: if i already have 250 Handshake when i start the plugin for the first time, my Pwnagotchi will only be lv 1, while it should be lv 13(?)] -> if session-stats Plugin is installed, initially the data will be parsed from there. If not, just the last session will be counted.
-- [x] Make Things configurable through settings.
+- [ ] Remove remnants of old Save System.
+- [ ] Remake EXP calculation for handshakes captured before installation.
 - [ ] Testing, lots of testing.
 - [ ] Refactor the old code.
 
