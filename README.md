@@ -1,27 +1,25 @@
 # Experience-Plugin-Pwnagotchi
 
 A totally not useful plugin for the Pwnagotchi, making it get experience everytime he Associates, Deauths or get a Handshake. Try to level him up!
+Based on Gaelic Thunder's work. Updated for the jayofelony's pwnagotchi image - https://github.com/jayofelony/pwnagotchi/
 
 ![EXP Plugin](exp_new.jpg)
 
-Wanted to make him more like a Tamagotchi, but moved that idea on another project.
-
-I'm a total newb when it comes to Python so, feel free to help if you see im doing some bad stuff, or you've got some interesting ideas.
-
-Thanks to @mbudget0x01 and @hannadiamond for all the cool stuff!
 
 ## Setup
-1. Copy over `exp.py` into your custom plugins directory
-2. In your `config.toml` file, add:
+1. Copy over `exp.py` into your custom plugins directory (usually `/usr/local/share/pwnagotchi/custom-plugins/`)
+2. Please check that you do not have any similar plugins already! Like `xp.py`.
+3. In your `config.toml` file (use the `config` command for that), add:
 ```toml
-   main.plugins.exp.enabled = true
-   main.plugins.exp.lvl_x_coord = 0
-   main.plugins.exp.lvl_y_coord = 81
-   main.plugins.exp.exp_x_coord = 38
-   main.plugins.exp.exp_y_coord = 81
-   main.plugins.exp.bar_symbols_count = 12
+   [main.plugins.exp]
+   enabled = true
+   lvl_x_coord = 0
+   lvl_y_coord = 81
+   exp_x_coord = 38
+   exp_y_coord = 81
+   bar_symbols_count = 12
 ```
-3. Restart your device to see your new plugin!
+3. Restart your device to see your new plugin! You can use the `pwnkill` command for that.
 
 
 ## Things to do
@@ -33,7 +31,3 @@ Thanks to @mbudget0x01 and @hannadiamond for all the cool stuff!
 - [x] Make Things configurable through settings.
 
 - [ ] Testing, lots of testing.
-
-
-# Other Plugins to Check Out
-1. Age plugin, which shows age and strength based off of epochs and epochs trained https://github.com/hannadiamond/pwnagotchi-plugins
