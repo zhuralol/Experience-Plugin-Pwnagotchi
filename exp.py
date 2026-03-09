@@ -277,9 +277,9 @@ class EXP(plugins.Plugin):
     # Get Last Sessions Points
     def lastSessionPoints(self, agent):
         summary = 0
-        summary += agent.LastSession.handshakes * MULTIPLIER_HANDSHAKE
-        summary += agent.LastSession.associated * MULTIPLIER_ASSOCIATION
-        summary += agent.LastSession.deauthed * MULTIPLIER_DEAUTH
+        summary += agent.last_session.handshakes * MULTIPLIER_HANDSHAKE
+        summary += agent.last_session.associated * MULTIPLIER_ASSOCIATION
+        summary += agent.last_session.deauthed * MULTIPLIER_DEAUTH
         return summary
 
     
@@ -345,3 +345,4 @@ class EXP(plugins.Plugin):
             self.calcLevelFromSum(sum, agent)
             self.Save(self.save_file, self.save_file_mode)
                 
+
