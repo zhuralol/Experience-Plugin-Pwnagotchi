@@ -13,10 +13,10 @@ Based on Gaelic Thunder's work. Updated for the jayofelony's pwnagotchi image - 
 ```toml
    [main.plugins.exp]
    enabled = true
-   lvl_x_coord = 0
-   lvl_y_coord = 81
-   exp_x_coord = 38
-   exp_y_coord = 81
+   lvl_x_coord = 156
+   lvl_y_coord = 72
+   exp_x_coord = 196
+   exp_y_coord = 72
    bar_symbols_count = 12
 ```
 3. Restart your device to see your new plugin! You can use the `pwnkill` command for that.
